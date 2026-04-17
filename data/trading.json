@@ -1,0 +1,88 @@
+{
+  "apex-technologies": {
+    "tradeVolume": "$4.2 Billion",
+    "tradeVolumeNum": 4200000000,
+    "marketParticipation": "Active",
+    "equityTrades": "$2.1 Billion",
+    "derivatives": "$1.4 Billion",
+    "commodities": "$0.4 Billion",
+    "forexTrading": "$0.3 Billion",
+    "details": {
+      "tradingCharts": [
+        { "month": "Jan", "volume": 320, "profit": 4.2 },
+        { "month": "Feb", "volume": 380, "profit": 5.1 },
+        { "month": "Mar", "volume": 290, "profit": 3.8 },
+        { "month": "Apr", "volume": 420, "profit": 5.6 },
+        { "month": "May", "volume": 350, "profit": 4.5 },
+        { "month": "Jun", "volume": 410, "profit": 5.2 },
+        { "month": "Jul", "volume": 380, "profit": 4.9 },
+        { "month": "Aug", "volume": 340, "profit": 4.3 },
+        { "month": "Sep", "volume": 390, "profit": 5.0 },
+        { "month": "Oct", "volume": 420, "profit": 5.4 },
+        { "month": "Nov", "volume": 360, "profit": 4.6 },
+        { "month": "Dec", "volume": 340, "profit": 4.1 }
+      ],
+      "profitLoss": {
+        "totalProfit": "$56.7 Million",
+        "ytdReturn": "1.35%",
+        "sharpeRatio": 1.42,
+        "maxDrawdown": "-2.8%"
+      },
+      "marketSegments": {
+        "equities": 50,
+        "derivatives": 33,
+        "commodities": 10,
+        "forex": 7
+      },
+      "tradePerformance": [
+        { "quarter": "Q1 2024", "trades": 4520, "successRate": 68.2 },
+        { "quarter": "Q2 2024", "trades": 5180, "successRate": 71.4 },
+        { "quarter": "Q3 2024", "trades": 4890, "successRate": 69.8 },
+        { "quarter": "Q4 2024", "trades": 5320, "successRate": 72.1 }
+      ]
+    }
+  },
+  "zenith-energy": {
+    "tradeVolume": "$6.8 Billion",
+    "tradeVolumeNum": 6800000000,
+    "marketParticipation": "Very Active",
+    "equityTrades": "$2.8 Billion",
+    "derivatives": "$2.2 Billion",
+    "commodities": "$1.4 Billion",
+    "forexTrading": "$0.4 Billion",
+    "details": {
+      "tradingCharts": [
+        { "month": "Jan", "volume": 520, "profit": 7.8 },
+        { "month": "Feb", "volume": 580, "profit": 8.4 },
+        { "month": "Mar", "volume": 490, "profit": 6.2 },
+        { "month": "Apr", "volume": 620, "profit": 9.1 },
+        { "month": "May", "volume": 550, "profit": 7.8 },
+        { "month": "Jun", "volume": 610, "profit": 8.9 },
+        { "month": "Jul", "volume": 580, "profit": 8.2 },
+        { "month": "Aug", "volume": 540, "profit": 7.4 },
+        { "month": "Sep", "volume": 590, "profit": 8.5 },
+        { "month": "Oct", "volume": 620, "profit": 9.2 },
+        { "month": "Nov", "volume": 560, "profit": 7.9 },
+        { "month": "Dec", "volume": 540, "profit": 7.6 }
+      ],
+      "profitLoss": {
+        "totalProfit": "$97.0 Million",
+        "ytdReturn": "1.43%",
+        "sharpeRatio": 1.56,
+        "maxDrawdown": "-3.4%"
+      },
+      "marketSegments": {
+        "equities": 41,
+        "derivatives": 32,
+        "commodities": 21,
+        "forex": 6
+      },
+      "tradePerformance": [
+        { "quarter": "Q1 2024", "trades": 7820, "successRate": 65.8 },
+        { "quarter": "Q2 2024", "trades": 8540, "successRate": 68.2 },
+        { "quarter": "Q3 2024", "trades": 8120, "successRate": 67.4 },
+        { "quarter": "Q4 2024", "trades": 8890, "successRate": 69.8 }
+      ]
+    }
+  }
+}

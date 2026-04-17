@@ -1,0 +1,39 @@
+{
+  "marketData": [
+    {
+      "instrument": "US10Y Bond",
+      "market_price": 100.1,
+      "source": "Bloomberg",
+      "last_updated": "2026-04-12T08:00:00Z",
+      "status": "LIVE"
+    },
+    {
+      "instrument": "EUR Swap",
+      "market_price": 1.01,
+      "source": "Reuters",
+      "last_updated": "2026-04-13T06:54:56.723Z",
+      "status": "LIVE"
+    },
+    {
+      "instrument": "AAPL",
+      "market_price": 178.2,
+      "source": "NASDAQ",
+      "last_updated": "2026-04-12T08:30:00Z",
+      "status": "LIVE"
+    },
+    {
+      "instrument": "WTI Crude",
+      "market_price": 79.8,
+      "source": "ICE",
+      "last_updated": "2026-04-12T08:15:00Z",
+      "status": "LIVE"
+    },
+    {
+      "instrument": "USD/JPY",
+      "market_price": 151.5,
+      "source": "Bloomberg",
+      "last_updated": "2026-04-12T08:45:00Z",
+      "status": "LIVE"
+    }
+  ]
+}

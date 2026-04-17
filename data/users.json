@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "1776428654461",
+      "email": "rajesh@goldmansachs.com",
+      "password": "1234",
+      "role": "Financial",
+      "name": "Rajesh"
+    },
+    {
+      "id": "1776087332479",
+      "email": "pranav@goldmansachs.com",
+      "password": "1234567",
+      "role": "Sales",
+      "name": "Pranav"
+    },
+    {
+      "id": "1776079762829",
+      "email": "shannu@goldmansachs.com",
+      "password": "1234",
+      "role": "Sales",
+      "name": "Shanmuk"
+    },
+    {
+      "id": "1776079746337",
+      "email": "aswini@goldmansachs.com",
+      "password": "1234",
+      "role": "Financial",
+      "name": "Aswini"
+    },
+    {
+      "id": "1776079374870",
+      "email": "abhinav@goldmansachs.com",
+      "password": "1234",
+      "role": "Financial",
+      "name": "Abhinav"
+    }
+  ]
+}

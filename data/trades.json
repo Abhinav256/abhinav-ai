@@ -1,0 +1,59 @@
+{
+  "trades": [
+    {
+      "trade_id": "T1001",
+      "desk_id": "D002",
+      "instrument": "US10Y Bond",
+      "type": "Bond",
+      "quantity": 1000000,
+      "price": 99.2,
+      "currency": "USD",
+      "trade_date": "2026-04-11",
+      "pnl_impact": 12.0
+    },
+    {
+      "trade_id": "T1002",
+      "desk_id": "D002",
+      "instrument": "EUR Swap",
+      "type": "Derivative",
+      "quantity": 500000,
+      "price": 1.02,
+      "currency": "EUR",
+      "trade_date": "2026-04-11",
+      "pnl_impact": -0.2
+    },
+    {
+      "trade_id": "T1003",
+      "desk_id": "D001",
+      "instrument": "AAPL",
+      "type": "Equity",
+      "quantity": 2000,
+      "price": 175.5,
+      "currency": "USD",
+      "trade_date": "2026-04-11",
+      "pnl_impact": 0.1
+    },
+    {
+      "trade_id": "T1004",
+      "desk_id": "D003",
+      "instrument": "WTI Crude",
+      "type": "Commodity",
+      "quantity": 10000,
+      "price": 78.5,
+      "currency": "USD",
+      "trade_date": "2026-04-11",
+      "pnl_impact": -0.5
+    },
+    {
+      "trade_id": "T1005",
+      "desk_id": "D004",
+      "instrument": "USD/JPY",
+      "type": "FX",
+      "quantity": 10000000,
+      "price": 150.2,
+      "currency": "JPY",
+      "trade_date": "2026-04-11",
+      "pnl_impact": 0.2
+    }
+  ]
+}

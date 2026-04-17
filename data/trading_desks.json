@@ -1,0 +1,208 @@
+{
+  "tradingDesks": [
+    {
+      "desk_id": "D001",
+      "desk_name": "Equities - New York",
+      "region": "USA",
+      "type": "Equities",
+      "status": "Reconciled",
+      "pnl_reported": 52.5,
+      "pnl_expected": 52.5,
+      "variance": 0,
+      "last_updated": "2026-04-16T10:19:12.578Z"
+    },
+    {
+      "desk_id": "D002",
+      "desk_name": "FICC Rates - London",
+      "region": "UK",
+      "type": "FICC",
+      "status": "Reconciled",
+      "pnl_reported": 105.8,
+      "pnl_expected": 105.8,
+      "variance": 0,
+      "last_updated": "2026-04-16T10:18:30.172Z"
+    },
+    {
+      "desk_id": "D003",
+      "desk_name": "Commodities - Singapore",
+      "region": "APAC",
+      "type": "Commodities",
+      "status": "Reconciled",
+      "pnl_reported": 18.5,
+      "pnl_expected": 18.5,
+      "variance": 0,
+      "last_updated": "2026-04-15T12:04:39.390Z"
+    },
+    {
+      "desk_id": "D004",
+      "desk_name": "FX Trading - Tokyo",
+      "region": "APAC",
+      "type": "FX",
+      "status": "Reconciled",
+      "pnl_reported": 9.1,
+      "pnl_expected": 9.1,
+      "variance": 0,
+      "last_updated": "2026-04-15T12:04:25.047Z"
+    },
+    {
+      "desk_id": "D005",
+      "desk_name": "Credit - London",
+      "region": "UK",
+      "type": "Credit",
+      "status": "Reconciled",
+      "pnl_reported": 31.5,
+      "pnl_expected": 31.2,
+      "variance": 0.3,
+      "last_updated": "2026-04-12T07:45:00Z"
+    },
+    {
+      "desk_id": "D006",
+      "desk_name": "Structured Products - HK",
+      "region": "APAC",
+      "type": "Structured",
+      "status": "Reconciled",
+      "pnl_reported": 13.7,
+      "pnl_expected": 13.7,
+      "variance": 0,
+      "last_updated": "2026-04-13T13:09:16.091Z"
+    },
+    {
+      "desk_id": "D007",
+      "desk_name": "Equity Derivatives - New York",
+      "region": "USA",
+      "type": "Derivatives",
+      "status": "Reconciled",
+      "pnl_reported": 122.8,
+      "pnl_expected": 122.8,
+      "variance": 0,
+      "last_updated": "2026-04-14T15:40:18.485Z"
+    },
+    {
+      "desk_id": "D008",
+      "desk_name": "Fixed Income Trading - Frankfurt",
+      "region": "EMEA",
+      "type": "FICC",
+      "status": "Reconciled",
+      "pnl_reported": 82.3,
+      "pnl_expected": 82.3,
+      "variance": 0,
+      "last_updated": "2026-04-13T17:03:32.919Z"
+    },
+    {
+      "desk_id": "D009",
+      "desk_name": "Interest Rate Swaps - New York",
+      "region": "USA",
+      "type": "Rates",
+      "status": "Reconciled",
+      "pnl_reported": 172.8,
+      "pnl_expected": 172.8,
+      "variance": 0,
+      "last_updated": "2026-04-14T05:12:20.704Z"
+    },
+    {
+      "desk_id": "D010",
+      "desk_name": "Volatility Trading - Chicago",
+      "region": "USA",
+      "type": "Options",
+      "status": "Reconciled",
+      "pnl_reported": 92.1,
+      "pnl_expected": 92.1,
+      "variance": 0,
+      "last_updated": "2026-04-15T11:52:00.480Z"
+    },
+    {
+      "desk_id": "D011",
+      "desk_name": "FX Options - Singapore",
+      "region": "APAC",
+      "type": "Options",
+      "status": "Reconciled",
+      "pnl_reported": 62.8,
+      "pnl_expected": 62.8,
+      "variance": 0,
+      "last_updated": "2026-04-14T14:06:37.528Z"
+    },
+    {
+      "desk_id": "D012",
+      "desk_name": "Bond Trading - Frankfurt",
+      "region": "EMEA",
+      "type": "FICC",
+      "status": "Reconciled",
+      "pnl_reported": 98.2,
+      "pnl_expected": 98.2,
+      "variance": 0,
+      "last_updated": "2026-04-14T06:42:15.636Z"
+    },
+    {
+      "desk_id": "D013",
+      "desk_name": "Emerging Markets - Mumbai",
+      "region": "APAC",
+      "type": "Equities",
+      "status": "Reconciled",
+      "pnl_reported": 51.7,
+      "pnl_expected": 51.7,
+      "variance": 0,
+      "last_updated": "2026-04-14T05:50:53.749Z"
+    },
+    {
+      "desk_id": "D014",
+      "desk_name": "Commodity Futures - Houston",
+      "region": "USA",
+      "type": "Commodities",
+      "status": "Reconciled",
+      "pnl_reported": 41.2,
+      "pnl_expected": 41.2,
+      "variance": 0,
+      "last_updated": "2026-04-14T05:58:03.568Z"
+    },
+    {
+      "desk_id": "D015",
+      "desk_name": "Credit Derivatives - London",
+      "region": "UK",
+      "type": "Derivatives",
+      "status": "Reconciled",
+      "pnl_reported": 71.5,
+      "pnl_expected": 71.5,
+      "variance": 0,
+      "last_updated": "2026-04-14T06:23:40.968Z"
+    },
+    {
+      "desk_id": "D016",
+      "desk_name": "Interest Rate Derivatives - New York",
+      "region": "USA",
+      "type": "Derivatives",
+      "status": "Reconciled",
+      "pnl_reported": 112.4,
+      "pnl_expected": 112.4,
+      "variance": 0,
+      "last_updated": "2026-04-14T06:34:30.155Z"
+    },
+    {
+      "desk_id": "D017",
+      "desk_name": "Emerging Markets FX - Singapore",
+      "region": "APAC",
+      "type": "FX",
+      "status": "Anomaly",
+      "pnl_reported": 25.7,
+      "pnl_expected": 28.2,
+      "variance": -2.5,
+      "last_updated": "2026-04-16T11:25:00.000Z"
+    },
+    {
+      "desk_id": "D018",
+      "desk_name": "Credit Spread Trading - London",
+      "region": "UK",
+      "type": "Credit",
+      "status": "Reconciled",
+      "pnl_reported": 42.7,
+      "pnl_expected": 42.7,
+      "variance": 0,
+      "last_updated": "2026-04-17T08:25:28.290Z"
+    }
+  ],
+  "summary": {
+    "totalDesks": 128,
+    "reconciled": 90,
+    "pending": 39,
+    "anomalies": 1
+  }
+}

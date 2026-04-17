@@ -1,0 +1,44 @@
+{
+  "apex-technologies": {
+    "timeline": [
+      { "year": "2018", "event": "Asset Management Started", "description": "Initiated portfolio management services with $800M initial investment" },
+      { "year": "2019", "event": "Investment Banking Partnership", "description": "Engaged for Series C funding advisory, raised $150M" },
+      { "year": "2020", "event": "M&A Advisory - CloudTech", "description": "Advised on CloudTech acquisition worth $280M" },
+      { "year": "2021", "event": "IPO Underwriting", "description": "Lead underwriter for successful IPO, raised $520M" },
+      { "year": "2022", "event": "Trading Services Initiated", "description": "Began equity and derivatives trading relationship" },
+      { "year": "2023", "event": "Portfolio Expansion", "description": "AUM grew to $2.4B with new fund allocations" },
+      { "year": "2024", "event": "Strategic Partnership", "description": "Elevated to Tier 1 client status with comprehensive services" }
+    ],
+    "relationshipManager": "James Morrison",
+    "clientSince": "2018",
+    "totalRevenue": "$145 Million"
+  },
+  "zenith-energy": {
+    "timeline": [
+      { "year": "2016", "event": "Initial Engagement", "description": "First meeting with leadership team" },
+      { "year": "2017", "event": "Asset Management Started", "description": "Began portfolio management with $1.2B allocation" },
+      { "year": "2018", "event": "M&A Advisory - Green Energy", "description": "Advised on Green Energy merger worth $680M" },
+      { "year": "2019", "event": "Project Finance", "description": "Structured $350M wind farm financing" },
+      { "year": "2020", "event": "Debt Restructuring", "description": "Successfully restructured $480M in debt obligations" },
+      { "year": "2021", "event": "IPO Underwriting", "description": "Lead underwriter for renewable subsidiary IPO" },
+      { "year": "2022", "event": "Trading Relationship Expanded", "description": "Added commodities and derivatives trading" },
+      { "year": "2023", "event": "ESG Advisory", "description": "Initiated sustainability consulting engagement" },
+      { "year": "2024", "event": "Platinum Partnership", "description": "Achieved highest tier partnership status" }
+    ],
+    "relationshipManager": "Jennifer Cole",
+    "clientSince": "2016",
+    "totalRevenue": "$248 Million"
+  },
+  "bluestone-industries": {
+    "timeline": [
+      { "year": "2020", "event": "Initial Contact", "description": "Introductory meeting through industry conference" },
+      { "year": "2021", "event": "Asset Management Started", "description": "Began conservative portfolio management with $600M" },
+      { "year": "2022", "event": "Portfolio Growth", "description": "Expanded AUM to $920M with fixed income focus" },
+      { "year": "2023", "event": "Strategic Review", "description": "Conducted comprehensive financial strategy review" },
+      { "year": "2024", "event": "Service Expansion Discussion", "description": "Exploring investment banking and trading opportunities" }
+    ],
+    "relationshipManager": "Patricia Lee",
+    "clientSince": "2020",
+    "totalRevenue": "$32 Million"
+  }
+}

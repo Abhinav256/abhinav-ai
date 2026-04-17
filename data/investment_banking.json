@@ -1,0 +1,82 @@
+{
+  "apex-technologies": {
+    "dealsCompleted": 12,
+    "ipoHandled": 2,
+    "mergers": 4,
+    "acquisitions": 6,
+    "capitalRaised": "$1.8 Billion",
+    "capitalRaisedNum": 1800000000,
+    "advisoryServices": ["M&A Advisory", "IPO Underwriting", "Private Placement", "Strategic Consulting"],
+    "details": {
+      "dealTimeline": [
+        { "year": "2019", "deal": "Series C Funding", "value": 150, "type": "Private Placement" },
+        { "year": "2020", "deal": "CloudTech Acquisition", "value": 280, "type": "M&A" },
+        { "year": "2021", "deal": "IPO Underwriting", "value": 520, "type": "IPO" },
+        { "year": "2022", "deal": "DataSystems Merger", "value": 340, "type": "M&A" },
+        { "year": "2023", "deal": "AI Ventures Acquisition", "value": 290, "type": "M&A" },
+        { "year": "2024", "deal": "Secondary Offering", "value": 220, "type": "Equity Offering" }
+      ],
+      "investmentPerformance": [
+        { "quarter": "Q1 2024", "dealValue": 180, "fees": 4.2 },
+        { "quarter": "Q2 2024", "dealValue": 220, "fees": 5.1 },
+        { "quarter": "Q3 2024", "dealValue": 165, "fees": 3.8 },
+        { "quarter": "Q4 2024", "dealValue": 240, "fees": 5.6 }
+      ],
+      "capitalHistory": [
+        { "year": "2019", "raised": 150 },
+        { "year": "2020", "raised": 280 },
+        { "year": "2021", "raised": 520 },
+        { "year": "2022", "raised": 340 },
+        { "year": "2023", "raised": 290 },
+        { "year": "2024", "raised": 220 }
+      ],
+      "revenueGeneration": {
+        "totalFees": "$42.5 Million",
+        "advisoryFees": "$18.2 Million",
+        "underwritingFees": "$15.8 Million",
+        "placementFees": "$8.5 Million"
+      }
+    }
+  },
+  "zenith-energy": {
+    "dealsCompleted": 18,
+    "ipoHandled": 1,
+    "mergers": 7,
+    "acquisitions": 10,
+    "capitalRaised": "$3.2 Billion",
+    "capitalRaisedNum": 3200000000,
+    "advisoryServices": ["M&A Advisory", "Project Finance", "Debt Restructuring", "Energy Transition Advisory"],
+    "details": {
+      "dealTimeline": [
+        { "year": "2017", "deal": "SolarMax Acquisition", "value": 420, "type": "M&A" },
+        { "year": "2018", "deal": "Green Energy Merger", "value": 680, "type": "M&A" },
+        { "year": "2019", "deal": "Project Finance - Wind Farm", "value": 350, "type": "Project Finance" },
+        { "year": "2020", "deal": "Debt Restructuring", "value": 480, "type": "Restructuring" },
+        { "year": "2021", "deal": "IPO Underwriting", "value": 720, "type": "IPO" },
+        { "year": "2022", "deal": "CleanTech Acquisition", "value": 380, "type": "M&A" },
+        { "year": "2023", "deal": "Renewable Assets Purchase", "value": 290, "type": "M&A" }
+      ],
+      "investmentPerformance": [
+        { "quarter": "Q1 2024", "dealValue": 320, "fees": 7.4 },
+        { "quarter": "Q2 2024", "dealValue": 280, "fees": 6.5 },
+        { "quarter": "Q3 2024", "dealValue": 410, "fees": 9.5 },
+        { "quarter": "Q4 2024", "dealValue": 350, "fees": 8.1 }
+      ],
+      "capitalHistory": [
+        { "year": "2017", "raised": 420 },
+        { "year": "2018", "raised": 680 },
+        { "year": "2019", "raised": 350 },
+        { "year": "2020", "raised": 480 },
+        { "year": "2021", "raised": 720 },
+        { "year": "2022", "raised": 380 },
+        { "year": "2023", "raised": 290 }
+      ],
+      "revenueGeneration": {
+        "totalFees": "$78.4 Million",
+        "advisoryFees": "$32.6 Million",
+        "underwritingFees": "$28.2 Million",
+        "placementFees": "$17.6 Million"
+      }
+    }
+  }
+}

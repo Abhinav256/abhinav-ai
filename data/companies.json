@@ -1,0 +1,22 @@
+{
+  "companies": [
+    {
+      "id": "apex-technologies",
+      "name": "Apex Technologies",
+      "status": "existing",
+      "departments": ["asset_management", "investment_banking", "trading"]
+    },
+    {
+      "id": "zenith-energy",
+      "name": "Zenith Energy",
+      "status": "existing",
+      "departments": ["asset_management", "investment_banking", "trading"]
+    },
+    {
+      "id": "bluestone-industries",
+      "name": "Bluestone Industries",
+      "status": "existing",
+      "departments": ["asset_management"]
+    }
+  ]
+}

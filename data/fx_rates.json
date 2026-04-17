@@ -1,0 +1,30 @@
+{
+  "fxRates": [
+    {
+      "currency_pair": "EUR/USD",
+      "rate": 1.08,
+      "timestamp": "2026-04-12T08:00:00Z",
+      "status": "CURRENT",
+      "last_updated": "2026-04-13T06:54:56.723Z"
+    },
+    {
+      "currency_pair": "EUR/USD",
+      "rate": 1.08,
+      "timestamp": "2026-04-11T18:00:00Z",
+      "status": "CURRENT",
+      "last_updated": "2026-04-13T06:54:56.723Z"
+    },
+    {
+      "currency_pair": "USD/JPY",
+      "rate": 151.5,
+      "timestamp": "2026-04-12T08:45:00Z",
+      "status": "CURRENT"
+    },
+    {
+      "currency_pair": "USD/JPY",
+      "rate": 149.8,
+      "timestamp": "2026-04-11T18:00:00Z",
+      "status": "OLD"
+    }
+  ]
+}

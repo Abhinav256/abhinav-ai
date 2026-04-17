@@ -1,0 +1,32 @@
+{
+  "apex-technologies": {
+    "ceo": "Michael Chen",
+    "cfo": "Sarah Williams",
+    "cto": "David Park",
+    "keyStakeholders": ["James Morrison (Board Chair)", "Lisa Thompson (VP Operations)", "Robert Kim (Chief Strategy Officer)"],
+    "primaryContact": "James Morrison",
+    "email": "contact@apextechnologies.com",
+    "phone": "+1 (212) 555-0147",
+    "headquarters": "New York, NY"
+  },
+  "zenith-energy": {
+    "ceo": "Richard Anderson",
+    "cfo": "Emily Martinez",
+    "cto": "Thomas Wright",
+    "keyStakeholders": ["Jennifer Cole (Board Chair)", "Marcus Johnson (VP Exploration)", "Diana Ross (Chief Sustainability Officer)"],
+    "primaryContact": "Jennifer Cole",
+    "email": "corporate@zenithenergy.com",
+    "phone": "+1 (713) 555-0298",
+    "headquarters": "Houston, TX"
+  },
+  "bluestone-industries": {
+    "ceo": "William Turner",
+    "cfo": "Amanda Foster",
+    "cto": "Kevin O'Brien",
+    "keyStakeholders": ["Patricia Lee (Board Chair)", "Daniel Scott (VP Manufacturing)", "Rachel Green (Chief Innovation Officer)"],
+    "primaryContact": "Patricia Lee",
+    "email": "info@bluestoneindustries.com",
+    "phone": "+1 (312) 555-0412",
+    "headquarters": "Chicago, IL"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "apex-technologies": {
+    "portfolioValue": "$2.8 Billion",
+    "portfolioValueNum": 2800000000,
+    "assetsManaged": "$4.2 Billion",
+    "assetsNum": 4200000000,
+    "riskLevel": "Moderate",
+    "investmentType": "Growth & Income",
+    "returns": "12.4% YTD",
+    "returnsNum": 12.4,
+    "managedFunds": ["GS Tech Growth Fund", "GS Innovation Index", "GS Balanced Portfolio"],
+    "yearsOfService": 6,
+    "details": {
+      "assetBreakdown": {
+        "equities": 45,
+        "fixedIncome": 25,
+        "alternatives": 20,
+        "cash": 10
+      },
+      "investmentSectors": {
+        "technology": 35,
+        "healthcare": 20,
+        "financials": 15,
+        "industrials": 15,
+        "other": 15
+      },
+      "portfolioGrowth": [
+        { "year": "2019", "value": 1200 },
+        { "year": "2020", "value": 1450 },
+        { "year": "2021", "value": 1980 },
+        { "year": "2022", "value": 2100 },
+        { "year": "2023", "value": 2450 },
+        { "year": "2024", "value": 2800 }
+      ],
+      "historicalPerformance": [
+        { "year": "2019", "return": 8.2 },
+        { "year": "2020", "return": 15.6 },
+        { "year": "2021", "return": 22.4 },
+        { "year": "2022", "return": -3.2 },
+        { "year": "2023", "return": 14.8 },
+        { "year": "2024", "return": 12.4 }
+      ]
+    }
+  },
+  "zenith-energy": {
+    "portfolioValue": "$3.5 Billion",
+    "portfolioValueNum": 3500000000,
+    "assetsManaged": "$5.8 Billion",
+    "assetsNum": 5800000000,
+    "riskLevel": "High",
+    "investmentType": "Aggressive Growth",
+    "returns": "18.7% YTD",
+    "returnsNum": 18.7,
+    "managedFunds": ["GS Energy Transition Fund", "GS Sustainable Resources", "GS Commodity Tracker"],
+    "yearsOfService": 8,
+    "details": {
+      "assetBreakdown": {
+        "equities": 55,
+        "fixedIncome": 15,
+        "alternatives": 25,
+        "cash": 5
+      },
+      "investmentSectors": {
+        "energy": 40,
+        "utilities": 20,
+        "materials": 15,
+        "industrials": 15,
+        "other": 10
+      },
+      "portfolioGrowth": [
+        { "year": "2019", "value": 1800 },
+        { "year": "2020", "value": 1650 },
+        { "year": "2021", "value": 2400 },
+        { "year": "2022", "value": 3100 },
+        { "year": "2023", "value": 3200 },
+        { "year": "2024", "value": 3500 }
+      ],
+      "historicalPerformance": [
+        { "year": "2019", "return": 5.4 },
+        { "year": "2020", "return": -8.2 },
+        { "year": "2021", "return": 32.5 },
+        { "year": "2022", "return": 28.4 },
+        { "year": "2023", "return": 6.2 },
+        { "year": "2024", "return": 18.7 }
+      ]
+    }
+  },
+  "bluestone-industries": {
+    "portfolioValue": "$1.2 Billion",
+    "portfolioValueNum": 1200000000,
+    "assetsManaged": "$1.8 Billion",
+    "assetsNum": 1800000000,
+    "riskLevel": "Low",
+    "investmentType": "Conservative Income",
+    "returns": "6.8% YTD",
+    "returnsNum": 6.8,
+    "managedFunds": ["GS Industrial Value Fund", "GS Dividend Growth", "GS Fixed Income Plus"],
+    "yearsOfService": 4,
+    "details": {
+      "assetBreakdown": {
+        "equities": 30,
+        "fixedIncome": 45,
+        "alternatives": 15,
+        "cash": 10
+      },
+      "investmentSectors": {
+        "industrials": 35,
+        "materials": 25,
+        "financials": 20,
+        "utilities": 10,
+        "other": 10
+      },
+      "portfolioGrowth": [
+        { "year": "2021", "value": 800 },
+        { "year": "2022", "value": 920 },
+        { "year": "2023", "value": 1050 },
+        { "year": "2024", "value": 1200 }
+      ],
+      "historicalPerformance": [
+        { "year": "2021", "return": 8.5 },
+        { "year": "2022", "return": 4.2 },
+        { "year": "2023", "return": 9.1 },
+        { "year": "2024", "return": 6.8 }
+      ]
+    }
+  }
+}

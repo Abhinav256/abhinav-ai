@@ -1,0 +1,83 @@
+{
+  "apex-technologies": {
+    "potentialServices": ["Private Equity Advisory", "Wealth Management", "Structured Products"],
+    "estimatedRevenue": "$45 Million",
+    "estimatedRevenueNum": 45000000,
+    "growthProbability": 78,
+    "profitPercentage": 24.5,
+    "details": {
+      "projectedServices": [
+        { "service": "Private Equity Advisory", "probability": 85, "revenue": 18000000 },
+        { "service": "Wealth Management", "probability": 72, "revenue": 15000000 },
+        { "service": "Structured Products", "probability": 68, "revenue": 12000000 }
+      ],
+      "revenueForecast": [
+        { "year": "2025", "projected": 48 },
+        { "year": "2026", "projected": 62 },
+        { "year": "2027", "projected": 78 },
+        { "year": "2028", "projected": 95 }
+      ],
+      "growthCurve": [
+        { "quarter": "Q1 2025", "growth": 5.2 },
+        { "quarter": "Q2 2025", "growth": 8.4 },
+        { "quarter": "Q3 2025", "growth": 12.1 },
+        { "quarter": "Q4 2025", "growth": 15.8 }
+      ],
+      "aiPrediction": "Based on historical engagement patterns and market trends, Apex Technologies shows strong potential for expanding into Private Equity Advisory services. Their growing tech portfolio and recent M&A activities suggest readiness for more sophisticated financial products. Recommend prioritizing wealth management discussions with CFO Sarah Williams."
+    }
+  },
+  "zenith-energy": {
+    "potentialServices": ["Carbon Credit Trading", "ESG Advisory", "Infrastructure Finance"],
+    "estimatedRevenue": "$72 Million",
+    "estimatedRevenueNum": 72000000,
+    "growthProbability": 82,
+    "profitPercentage": 28.2,
+    "details": {
+      "projectedServices": [
+        { "service": "Carbon Credit Trading", "probability": 88, "revenue": 32000000 },
+        { "service": "ESG Advisory", "probability": 79, "revenue": 24000000 },
+        { "service": "Infrastructure Finance", "probability": 75, "revenue": 16000000 }
+      ],
+      "revenueForecast": [
+        { "year": "2025", "projected": 78 },
+        { "year": "2026", "projected": 98 },
+        { "year": "2027", "projected": 125 },
+        { "year": "2028", "projected": 156 }
+      ],
+      "growthCurve": [
+        { "quarter": "Q1 2025", "growth": 6.8 },
+        { "quarter": "Q2 2025", "growth": 11.2 },
+        { "quarter": "Q3 2025", "growth": 16.5 },
+        { "quarter": "Q4 2025", "growth": 22.4 }
+      ],
+      "aiPrediction": "Zenith Energy is strategically positioned for carbon credit trading expansion given regulatory tailwinds and their existing sustainability initiatives. ESG Advisory presents immediate opportunity as they prepare for enhanced disclosure requirements. Infrastructure Finance could support their renewable energy expansion plans."
+    }
+  },
+  "bluestone-industries": {
+    "potentialServices": ["Investment Banking Advisory", "Trading Services", "Supply Chain Finance"],
+    "estimatedRevenue": "$28 Million",
+    "estimatedRevenueNum": 28000000,
+    "growthProbability": 64,
+    "profitPercentage": 18.8,
+    "details": {
+      "projectedServices": [
+        { "service": "Investment Banking Advisory", "probability": 68, "revenue": 12000000 },
+        { "service": "Trading Services", "probability": 62, "revenue": 9000000 },
+        { "service": "Supply Chain Finance", "probability": 58, "revenue": 7000000 }
+      ],
+      "revenueForecast": [
+        { "year": "2025", "projected": 32 },
+        { "year": "2026", "projected": 38 },
+        { "year": "2027", "projected": 45 },
+        { "year": "2028", "projected": 52 }
+      ],
+      "growthCurve": [
+        { "quarter": "Q1 2025", "growth": 3.2 },
+        { "quarter": "Q2 2025", "growth": 5.8 },
+        { "quarter": "Q3 2025", "growth": 8.4 },
+        { "quarter": "Q4 2025", "growth": 11.2 }
+      ],
+      "aiPrediction": "Bluestone Industries shows moderate growth potential with opportunities in investment banking as they consider strategic acquisitions in the manufacturing sector. Trading services could be introduced gradually given their conservative risk profile. Supply chain finance aligns with their operational focus."
+    }
+  }
+}

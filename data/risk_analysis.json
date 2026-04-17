@@ -1,0 +1,125 @@
+{
+  "apex-technologies": {
+    "riskScore": "Medium",
+    "riskScoreNum": 45,
+    "creditRisk": "Low",
+    "creditRiskNum": 28,
+    "marketRisk": "Medium",
+    "marketRiskNum": 52,
+    "operationalRisk": "Low",
+    "operationalRiskNum": 32,
+    "complianceScore": 92,
+    "details": {
+      "riskProfile": {
+        "overall": "Moderate",
+        "volatility": "Medium",
+        "liquidityRisk": "Low",
+        "concentrationRisk": "Medium",
+        "regulatoryRisk": "Low"
+      },
+      "riskTrendGraph": [
+        { "month": "Jan", "risk": 42 },
+        { "month": "Feb", "risk": 44 },
+        { "month": "Mar", "risk": 48 },
+        { "month": "Apr", "risk": 45 },
+        { "month": "May", "risk": 43 },
+        { "month": "Jun", "risk": 46 },
+        { "month": "Jul", "risk": 44 },
+        { "month": "Aug", "risk": 47 },
+        { "month": "Sep", "risk": 45 },
+        { "month": "Oct", "risk": 44 },
+        { "month": "Nov", "risk": 46 },
+        { "month": "Dec", "risk": 45 }
+      ],
+      "mitigationStrategies": [
+        "Diversified portfolio allocation across sectors",
+        "Hedging strategies for currency exposure",
+        "Regular stress testing of investment positions",
+        "Enhanced due diligence for M&A activities"
+      ],
+      "aiAnalysis": "Apex Technologies maintains a balanced risk profile suitable for growth-oriented investing. Credit risk remains low due to strong cash flows and manageable debt levels. Market risk is moderate reflecting technology sector volatility. Recommend continued monitoring of concentration risk in tech holdings."
+    }
+  },
+  "zenith-energy": {
+    "riskScore": "Medium-High",
+    "riskScoreNum": 62,
+    "creditRisk": "Medium",
+    "creditRiskNum": 48,
+    "marketRisk": "High",
+    "marketRiskNum": 72,
+    "operationalRisk": "Medium",
+    "operationalRiskNum": 55,
+    "complianceScore": 88,
+    "details": {
+      "riskProfile": {
+        "overall": "Elevated",
+        "volatility": "High",
+        "liquidityRisk": "Medium",
+        "concentrationRisk": "High",
+        "regulatoryRisk": "Medium"
+      },
+      "riskTrendGraph": [
+        { "month": "Jan", "risk": 58 },
+        { "month": "Feb", "risk": 62 },
+        { "month": "Mar", "risk": 68 },
+        { "month": "Apr", "risk": 65 },
+        { "month": "May", "risk": 60 },
+        { "month": "Jun", "risk": 64 },
+        { "month": "Jul", "risk": 62 },
+        { "month": "Aug", "risk": 66 },
+        { "month": "Sep", "risk": 63 },
+        { "month": "Oct", "risk": 61 },
+        { "month": "Nov", "risk": 64 },
+        { "month": "Dec", "risk": 62 }
+      ],
+      "mitigationStrategies": [
+        "Commodity hedging for energy price exposure",
+        "Geographic diversification of operations",
+        "ESG compliance monitoring and reporting",
+        "Operational risk insurance coverage"
+      ],
+      "aiAnalysis": "Zenith Energy carries elevated risk due to energy sector volatility and commodity price dependencies. High market risk reflects oil and gas price fluctuations. Concentration in energy assets warrants diversification considerations. Strong compliance score indicates robust governance framework."
+    }
+  },
+  "bluestone-industries": {
+    "riskScore": "Low",
+    "riskScoreNum": 32,
+    "creditRisk": "Very Low",
+    "creditRiskNum": 18,
+    "marketRisk": "Low",
+    "marketRiskNum": 35,
+    "operationalRisk": "Low",
+    "operationalRiskNum": 28,
+    "complianceScore": 96,
+    "details": {
+      "riskProfile": {
+        "overall": "Conservative",
+        "volatility": "Low",
+        "liquidityRisk": "Very Low",
+        "concentrationRisk": "Low",
+        "regulatoryRisk": "Very Low"
+      },
+      "riskTrendGraph": [
+        { "month": "Jan", "risk": 30 },
+        { "month": "Feb", "risk": 32 },
+        { "month": "Mar", "risk": 34 },
+        { "month": "Apr", "risk": 32 },
+        { "month": "May", "risk": 31 },
+        { "month": "Jun", "risk": 33 },
+        { "month": "Jul", "risk": 32 },
+        { "month": "Aug", "risk": 34 },
+        { "month": "Sep", "risk": 32 },
+        { "month": "Oct", "risk": 31 },
+        { "month": "Nov", "risk": 33 },
+        { "month": "Dec", "risk": 32 }
+      ],
+      "mitigationStrategies": [
+        "Conservative investment allocation",
+        "Strong cash reserve maintenance",
+        "Supply chain diversification",
+        "Regular operational audits"
+      ],
+      "aiAnalysis": "Bluestone Industries demonstrates exemplary risk management with low overall risk profile. Conservative financial practices and strong cash position minimize credit risk. Market risk is contained through diversified industrial operations. Excellent compliance score reflects strong corporate governance."
+    }
+  }
+}
