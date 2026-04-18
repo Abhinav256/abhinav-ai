@@ -72,12 +72,12 @@ async function getUserRoleFromSession(req: Request): Promise<UserRole> {
   try {
     const cookieStore = await cookies()
     let sessionId = cookieStore.get("gs_session_id")?.value
-    
+
     // Also check X-Session-ID header
     if (!sessionId) {
       sessionId = (req.headers.get("X-Session-ID") || req.headers.get("x-session-id")) || undefined
     }
-    
+
     if (!sessionId) {
       console.log("[SECURITY] No session found, defaulting to unknown")
       return "unknown"
@@ -87,7 +87,7 @@ async function getUserRoleFromSession(req: Request): Promise<UserRole> {
 
     // Look up session in sessions.json
     const session = (sessionsData as any).sessions.find((s: any) => s.sessionId === sessionId)
-    
+
     if (session) {
       const role = session.role.toLowerCase() === "financial" ? "trader" : session.role.toLowerCase() === "sales" ? "sales" : "admin"
       console.log(`[SECURITY] User role from session: ${role}`)
@@ -136,16 +136,27 @@ function authorizeQuery(userRole: UserRole, query: string): { allowed: boolean; 
   }
 
   // Block trader/financial users from sales queries
+  // BUT: Allow if query is primarily about financial data (contains financial keywords)
   if (userRole === "trader") {
     const queryLower = query.toLowerCase()
-    for (const keyword of SALES_ONLY_KEYWORDS) {
-      if (queryLower.includes(keyword)) {
-        console.log(`[SECURITY] BLOCKED: Trader user querying "${keyword}"`)
-        return {
-          allowed: false,
-          message: "This information is not available in your dashboard."
+    
+    // Check if this is a financial query (contains P&L, anomaly, variance, etc.)
+    const isFinancialQuery = FINANCIAL_ONLY_KEYWORDS.some(keyword => queryLower.includes(keyword))
+    
+    // If NOT a financial query, check for sales keywords
+    if (!isFinancialQuery) {
+      for (const keyword of SALES_ONLY_KEYWORDS) {
+        if (queryLower.includes(keyword)) {
+          console.log(`[SECURITY] BLOCKED: Trader user querying "${keyword}" (pure sales query)`)
+          return {
+            allowed: false,
+            message: "Your access to this data is restricted."
+          }
         }
       }
+    } else {
+      // This is a financial query, allow it even if it mentions asset management
+      console.log(`[SECURITY] ✅ ALLOWED: Trader user financial query (financial keywords detected)`)
     }
   }
 

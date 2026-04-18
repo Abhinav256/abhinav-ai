@@ -1,12 +1,21 @@
 {
   "sessions": [
     {
-      "sessionId": "session_1776455282105",
+      "sessionId": "session_1776503713241",
+      "email": "aswini@goldmansachs.com",
+      "role": "Financial",
+      "name": "Aswini",
+      "loginTime": "2026-04-18T09:15:13.241Z",
+      "lastActivityTime": "2026-04-18T09:15:13.597Z",
+      "isActive": true
+    },
+    {
+      "sessionId": "session_1776503932015",
       "email": "pranav@goldmansachs.com",
       "role": "Sales",
       "name": "Pranav",
-      "loginTime": "2026-04-17T19:48:02.105Z",
-      "lastActivityTime": "2026-04-17T20:10:50.579Z",
+      "loginTime": "2026-04-18T09:18:52.015Z",
+      "lastActivityTime": "2026-04-18T09:18:53.794Z",
       "isActive": true
     }
   ]
