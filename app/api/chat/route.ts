@@ -1,6 +1,7 @@
 import { convertToModelMessages, streamText, UIMessage } from "ai"
 import { cookies } from "next/headers"
 import { google } from "@ai-sdk/google"
+import { findSessionById } from "@/lib/session-store"
 
 import companies from "@/data/companies.json"
 import crm from "@/data/crm.json"
@@ -13,7 +14,6 @@ import marketData from "@/data/market_data.json"
 import fxRates from "@/data/fx_rates.json"
 import riskAnalysis from "@/data/risk_analysis.json"
 import tradingDesks from "@/data/trading_desks.json"
-import sessionsData from "@/data/sessions.json"
 
 export const maxDuration = 30
 
@@ -85,8 +85,8 @@ async function getUserRoleFromSession(req: Request): Promise<UserRole> {
 
     console.log(`[SECURITY] Session ID found: ${sessionId}`)
 
-    // Look up session in sessions.json
-    const session = (sessionsData as any).sessions.find((s: any) => s.sessionId === sessionId)
+    // Look up session in shared in-memory store
+    const session = findSessionById(sessionId)
 
     if (session) {
       const role = session.role.toLowerCase() === "financial" ? "trader" : session.role.toLowerCase() === "sales" ? "sales" : "admin"

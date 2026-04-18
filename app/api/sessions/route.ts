@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getSessions, saveSessions, createSession, deleteSession, findSessionById } from '@/lib/session-store'
 
 interface Session {
   sessionId: string
@@ -14,41 +15,12 @@ interface SessionsData {
   sessions: Session[]
 }
 
-// In-memory session store (works on Vercel and serverless platforms)
-let sessionsStore: SessionsData = { sessions: [] }
-
-async function getSessions(): Promise<SessionsData> {
-  return sessionsStore
-}
-
-async function saveSessions(data: SessionsData): Promise<void> {
-  sessionsStore = data
-}
-
 export async function POST(req: NextRequest) {
   try {
     const { action, sessionId, email, role, name } = await req.json()
 
-    const sessionsData = await getSessions()
-
     if (action === 'create') {
-      // Create a new session
-      const newSession: Session = {
-        sessionId: `session_${Date.now()}`,
-        email,
-        role,
-        name,
-        loginTime: new Date().toISOString(),
-        lastActivityTime: new Date().toISOString(),
-        isActive: true,
-      }
-
-      // Remove any existing sessions for this email
-      sessionsData.sessions = sessionsData.sessions.filter(s => s.email !== email)
-      
-      // Add new session
-      sessionsData.sessions.push(newSession)
-      await saveSessions(sessionsData)
+      const newSession = createSession({ email, role, name, isActive: true })
 
       return NextResponse.json({
         success: true,
@@ -58,8 +30,7 @@ export async function POST(req: NextRequest) {
     }
 
     if (action === 'get') {
-      // Get a session by ID
-      const session = sessionsData.sessions.find(s => s.sessionId === sessionId)
+      const session = findSessionById(sessionId)
       if (!session) {
         return NextResponse.json(
           { success: false, message: 'Session not found' },
@@ -68,22 +39,23 @@ export async function POST(req: NextRequest) {
       }
 
       // Update last activity time
-      session.lastActivityTime = new Date().toISOString()
-      await saveSessions(sessionsData)
+      const sessionsData = getSessions()
+      const sessionIndex = sessionsData.sessions.findIndex(s => s.sessionId === sessionId)
+      if (sessionIndex !== -1) {
+        sessionsData.sessions[sessionIndex].lastActivityTime = new Date().toISOString()
+        saveSessions(sessionsData)
+      }
 
       return NextResponse.json({ success: true, session })
     }
 
     if (action === 'delete') {
-      // Delete a session
-      sessionsData.sessions = sessionsData.sessions.filter(s => s.sessionId !== sessionId)
-      await saveSessions(sessionsData)
-
+      deleteSession(sessionId)
       return NextResponse.json({ success: true, message: 'Session deleted' })
     }
 
     if (action === 'list') {
-      // List all active sessions
+      const sessionsData = getSessions()
       const activeSessions = sessionsData.sessions.filter(s => s.isActive)
       return NextResponse.json({ success: true, sessions: activeSessions })
     }
