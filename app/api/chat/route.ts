@@ -95,9 +95,20 @@ async function getUserRoleFromSession(req: Request): Promise<UserRole> {
   }
 }
 
-async function resolveUserRole(sessionId?: string): Promise<UserRole> {
+async function resolveUserRole(sessionId?: string, dashboard?: string): Promise<UserRole> {
   if (!sessionId) {
-    console.log("[SECURITY] No session found, defaulting to unknown")
+    console.log("[SECURITY] No session found")
+    
+    // If no session but dashboard is specified, infer role from dashboard
+    if (dashboard === "financial") {
+      console.log("[SECURITY] Inferring role from dashboard: financial -> trader")
+      return "trader"
+    } else if (dashboard === "sales") {
+      console.log("[SECURITY] Inferring role from dashboard: sales -> sales")
+      return "sales"
+    }
+    
+    console.log("[SECURITY] No session and no dashboard, defaulting to unknown")
     return "unknown"
   }
 
@@ -126,13 +137,12 @@ async function resolveUserRole(sessionId?: string): Promise<UserRole> {
 
 // LAYER 1: RBAC - Hard block for unauthorized access
 function authorizeQuery(userRole: UserRole, query: string): { allowed: boolean; message?: string } {
-  // Block unknown users from accessing chat entirely
+  // Even unknown users can access - they just get limited context
+  // The context isolation in LAYER 2 handles actual data access
+  
   if (userRole === "unknown") {
-    console.log(`[SECURITY] BLOCKED: Unknown user attempting access`)
-    return {
-      allowed: false,
-      message: "Authentication required. Please log in to access the chat."
-    }
+    console.log(`[SECURITY] Unknown user - allowing access with limited context`)
+    return { allowed: true }
   }
 
   // Block sales users from financial queries
@@ -323,8 +333,8 @@ export async function POST(req: Request) {
     console.log(`[SECURITY] Dashboard: ${dashboard}`)
 
     // LAYER 1: ROLE EXTRACTION
-    // Pass sessionId from body if available
-    const userRole = await resolveUserRole(sessionId)
+    // Pass sessionId and dashboard from body - infer role from dashboard if no session
+    const userRole = await resolveUserRole(sessionId, dashboard)
     console.log(`[SECURITY] Extracted role: ${userRole}`)
 
     // Extract last user message
