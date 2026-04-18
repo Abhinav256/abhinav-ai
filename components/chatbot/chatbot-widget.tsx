@@ -291,12 +291,15 @@ export function ChatbotWidget() {
         const currentPath = typeof window !== "undefined" ? window.location.pathname : ""
         const dashboard = currentPath.includes("/financial") ? "financial" : currentPath.includes("/sales") ? "sales" : "financial"
         
-        // Get session ID from localStorage or cookie
+        // Get session ID from localStorage
         const sessionId = typeof window !== "undefined" ? localStorage.getItem("gs_session_id") : null
         
-        // Parse the request body to add dashboard
+        console.log(`[CHATBOT] Session ID from localStorage: ${sessionId}`)
+        
+        // Parse the request body to add dashboard and sessionId
         const body = options?.body ? JSON.parse(options.body as string) : {}
         body.dashboard = dashboard
+        body.sessionId = sessionId
         
         // Create new options with updated body
         const updatedOptions = {

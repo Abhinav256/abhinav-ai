@@ -78,36 +78,50 @@ async function getUserRoleFromSession(req: Request): Promise<UserRole> {
       sessionId = (req.headers.get("X-Session-ID") || req.headers.get("x-session-id")) || undefined
     }
 
+    // Also try to extract from request body
     if (!sessionId) {
-      console.log("[SECURITY] No session found, defaulting to unknown")
-      return "unknown"
+      try {
+        const body = await req.clone().json() as any
+        sessionId = body.sessionId
+      } catch (e) {
+        // Body might not be JSON, that's okay
+      }
     }
 
-    console.log(`[SECURITY] Session ID found: ${sessionId}`)
-
-    // Look up session in shared in-memory store
-    const session = findSessionById(sessionId)
-
-    if (session) {
-      const role = session.role.toLowerCase() === "financial" ? "trader" : session.role.toLowerCase() === "sales" ? "sales" : "admin"
-      console.log(`[SECURITY] User role from session: ${role}`)
-      return role as UserRole
-    }
-
-    // Fallback to hardcoded map
-    const sessionMap: Record<string, UserRole> = {
-      "session_sales_001": "sales",
-      "session_trader_001": "trader",
-      "session_admin_001": "admin"
-    }
-
-    const role = sessionMap[sessionId] || "unknown"
-    console.log(`[SECURITY] User role from map: ${role}`)
-    return role
+    return await resolveUserRole(sessionId)
   } catch (error) {
     console.error("[SECURITY] Error extracting role:", error)
     return "unknown"
   }
+}
+
+async function resolveUserRole(sessionId?: string): Promise<UserRole> {
+  if (!sessionId) {
+    console.log("[SECURITY] No session found, defaulting to unknown")
+    return "unknown"
+  }
+
+  console.log(`[SECURITY] Session ID found: ${sessionId}`)
+
+  // Look up session in shared in-memory store
+  const session = findSessionById(sessionId)
+
+  if (session) {
+    const role = session.role.toLowerCase() === "financial" ? "trader" : session.role.toLowerCase() === "sales" ? "sales" : "admin"
+    console.log(`[SECURITY] User role from session: ${role}`)
+    return role as UserRole
+  }
+
+  // Fallback to hardcoded map
+  const sessionMap: Record<string, UserRole> = {
+    "session_sales_001": "sales",
+    "session_trader_001": "trader",
+    "session_admin_001": "admin"
+  }
+
+  const role = sessionMap[sessionId] || "unknown"
+  console.log(`[SECURITY] User role from map: ${role}`)
+  return role
 }
 
 // LAYER 1: RBAC - Hard block for unauthorized access
@@ -288,8 +302,8 @@ ${context}`
 export async function POST(req: Request) {
   try {
     // Parse request
-    const body = (await req.json()) as ChatRequest
-    const { messages, dashboard = "financial" } = body
+    const body = (await req.json()) as ChatRequest & { sessionId?: string }
+    const { messages, dashboard = "financial", sessionId } = body
 
     if (!messages || messages.length === 0) {
       return new Response(
@@ -309,7 +323,8 @@ export async function POST(req: Request) {
     console.log(`[SECURITY] Dashboard: ${dashboard}`)
 
     // LAYER 1: ROLE EXTRACTION
-    const userRole = await getUserRoleFromSession(req)
+    // Pass sessionId from body if available
+    const userRole = await resolveUserRole(sessionId)
     console.log(`[SECURITY] Extracted role: ${userRole}`)
 
     // Extract last user message
