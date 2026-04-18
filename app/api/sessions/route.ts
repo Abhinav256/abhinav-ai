@@ -1,8 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import fs from 'fs/promises'
-import path from 'path'
-
-const SESSIONS_FILE = path.join(process.cwd(), 'data', 'sessions.json')
 
 interface Session {
   sessionId: string
@@ -18,17 +14,15 @@ interface SessionsData {
   sessions: Session[]
 }
 
+// In-memory session store (works on Vercel and serverless platforms)
+let sessionsStore: SessionsData = { sessions: [] }
+
 async function getSessions(): Promise<SessionsData> {
-  try {
-    const data = await fs.readFile(SESSIONS_FILE, 'utf-8')
-    return JSON.parse(data)
-  } catch {
-    return { sessions: [] }
-  }
+  return sessionsStore
 }
 
 async function saveSessions(data: SessionsData): Promise<void> {
-  await fs.writeFile(SESSIONS_FILE, JSON.stringify(data, null, 2))
+  sessionsStore = data
 }
 
 export async function POST(req: NextRequest) {
